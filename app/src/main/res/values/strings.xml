@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Examen Eval 1</string>
+    <string name="login">Login</string>
+    <string name="pass">Pass</string>
+    <string name="buttonLogin">Login</string>
+    <string name="url">URL</string>
+    <string name="buttonCancel">Cancelar</string>
+    <string name="buttonConsultar">Consultar</string>
+    <string name="buttonRegistrar">Registrar</string>
+    <string name="buttonFind">Buscar</string>
+    <string name="buttonNew">Nuevo</string>
+    <string name="name">Name</string>
+    <string name="enterprise">Empresa</string>
+    <string name="textviewLogin">Login</string>
+</resources>
