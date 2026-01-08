@@ -12,4 +12,5 @@
     <string name="name">Name</string>
     <string name="enterprise">Empresa</string>
     <string name="textviewLogin">Login</string>
+    <string name="logo_description">Logo de la empresa</string>
 </resources>

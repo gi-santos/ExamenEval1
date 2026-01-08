@@ -2,7 +2,10 @@ package es.elorrieta.app.exameneval1
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -36,6 +39,19 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
+        // Aplicar animación al logo
+        val logo = findViewById<android.widget.ImageView>(R.id.logo)
+        val animation = AnimationUtils.loadAnimation(this, R.anim.splash_animation)
+        logo.startAnimation(animation)
+
+        // Navegar a MainActivity después de 3 segundos
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }, 3000)
 
         db = RoomDB(this)
         lifecycleScope.launch(Dispatchers.IO) {
